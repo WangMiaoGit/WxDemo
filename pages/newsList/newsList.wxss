@@ -1,0 +1,90 @@
+/* pages/newsList/newsList.wxss */
+/* .head {
+  height: 50px;
+  background-color: red;
+  padding-top: 10px;
+  box-sizing: border-box; 
+}
+
+.head input {
+  height: 30px;
+  background-color: white;
+  width: 80%;
+  margin:auto;
+} */
+
+.head {
+  height: 50px;
+  background-color: red;
+  overflow: hidden;
+}
+
+.head input {
+  height: 30px;
+  background-color: white;
+  width: 80%;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 6px;
+  /* padding-left: 5px; */
+}
+
+.type_pad {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.type_pad text {
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+.type_pad text.selected {
+  color: red;
+}
+
+.body {
+  background-color: #ccc;
+}
+
+.body .news-pad {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.body .news-pad .user-pad image {
+  width: 30px;
+  height: 30px;
+}
+
+.body .news-pad .user-pad text {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.body .news-pad .user-pad text.no-focused {
+  color: red;
+}
+
+.body .news-pad .user-pad text:last-child {
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+}
+
+.body .news-pad .news-title {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.body .news-pad .news-content video {
+  height: 200px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.body .news-pad .news-content image {
+  width: 100%;
+}

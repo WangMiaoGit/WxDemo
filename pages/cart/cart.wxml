@@ -1,0 +1,24 @@
+<!--pages/cart/cart.wxml-->
+<view>
+
+</view>
+<scroll-view scroll-y>
+	<view class="productList" wx:for="{{productList}}" wx:key="index">
+		<image src="/resource/{{item.src}}" mode="widthFix"></image>
+		<view class="info">
+			<text>{{item.name}}</text>
+			<text class="price">{{item.price}}</text>
+		</view>
+		<checkbox-group id="{{item.id}}" bindchange="priceChange" >
+    <!-- value  选中时触发checkbox-group的 change事件  并携带value值 e.detial.value   -->
+			<checkbox value="{{item.id}}"></checkbox>
+		</checkbox-group>
+	</view>
+</scroll-view>
+
+<view class="bottom">
+	<button style="width:100%">
+		去付款
+		<text>¥ {{price}}</text>
+	</button>
+</view>

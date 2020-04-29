@@ -1,0 +1,6 @@
+<!--pages/wxfor/wxfor.wxml-->
+<!-- 绑定users到id  避免数据更新更改 索引引起到问题 -->
+<view wx:for="{{users}}" wx:key='id'>
+	<checkbox><text>{{item.name}}</text></checkbox>
+</view>
+<button bindtap="addData">添加</button>

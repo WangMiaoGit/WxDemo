@@ -1,0 +1,59 @@
+<!--pages/test/test.wxml-->
+<view>
+	view
+</view>
+
+<text selectable >text</text>
+<text decode >&nbsp;</text>
+<!-- nbsp  ensp emsp -->
+<text  space="nbsp">你好  世界</text>
+<!-- block标签隐藏 -->
+<view>
+	<block>
+		block
+	</block>
+</view>
+<!-- 一组标签 -->
+<checkbox-group>
+	<checkbox>man</checkbox>
+	<checkbox>woman</checkbox>
+</checkbox-group>
+
+<radio-group>
+	<radio>男</radio>
+	<radio>女</radio>
+</radio-group>
+
+<!-- type: text;  number;  idcard;  digit;  -->
+<input type="text" placeholder="请输入密码" placeholder-style="color:red" placeholder-class="textstyle">
+</input>
+
+<button bindtap="showLoading">点击加载</button>
+<button bindtap="showToast" type="primary">Toast</button>
+<button bindtap="showModel" type="default">Model</button>
+<button type="warn">button</button>
+
+<!-- bingsubmit  提交的方法   bindreset  重置的方法 -->
+<form bindsubmit="" bindreset="">
+	<button form-type="submit">button</button>
+	<button form-type="reset">button</button>
+</form>
+
+<button bindtap="clickme">点击事件</button>
+<button bindlongtap="longclickme">长按点击事件</button>
+<input bindinput="inputchange"></input>
+<!-- bindfocus获取焦点   bindblur失去焦点-->
+<input bindfocus="" bindblur=""></input>
+
+<!-- open-type="getUserInfo" bindgetuserinfo="getUserInfo" -->
+<button size="default" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取用户电话号码</button>
+<button open-type="contact" bindcontact="contact">联系客服</button>
+
+<!-- 返回参数   currentTarget是当前点击的view的参数
+target 冒泡到点击view里面的view的参数
+
+data-传参的名称
+-->
+<button bindtap="showparam" data-number="1" data-number2="2">传参</button>
+

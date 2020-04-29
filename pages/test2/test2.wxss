@@ -1,0 +1,12 @@
+/* pages/test2/test2.wxss */
+.msg-style{
+  color: red;
+}
+button:last-child{
+  margin-top: 10px;
+}
+navigator text{
+  color: aqua;
+  padding: 20px;
+  
+}

@@ -1,0 +1,21 @@
+<!--pages/classtype/classtype.wxml-->
+<view class="container">
+	<!-- 左边菜单 view-->
+	<view class="menu">
+		<!-- 分类 -->
+		<view id="{{item.id}}" class="classtype" wx:for="{{classType}}" wx:key='index' bindtap="getClassProductors">
+			<text >{{item.name}}</text>
+		</view>
+	</view>
+	<!-- 右边列表 view-->
+	<scroll-view class="list" scroll-y>
+		<!-- 产品 -->
+		<view class="productList" wx:for="{{productList.length==0?productAll:productList}}" wx:key='index'>
+			<image src="/resource/{{item.src}}" mode="widthFix"></image>
+			<view class="info">
+				<text>{{item.name}}</text>
+				<text>{{item.price}}</text>
+			</view>
+		</view>
+	</scroll-view>
+</view>

@@ -1,0 +1,75 @@
+<!--pages/mainIndex/mainIndex.wxml-->
+<view class="container">
+	<view class="input-out">
+	<input placeholder="请输商品名称" ></input>
+	</view>
+	
+	<!-- 首页轮播 -->
+	<swiper autoplay circular indicator-dots indicator-color="#fff" indicator-active-color="#00ffff">
+		<swiper-item>
+			<navigator url="/pages/login/login" pen-type="switchTab">
+				<!-- <image src='https://img.tukuppt.com/bg_grid/00/03/30/DSTRZ3a11t.jpg'></image> -->
+				<image src='/resource/images/temp/banner1.jpg'></image>
+			</navigator>
+		</swiper-item>
+		<swiper-item>
+			<navigator url="/pages/login/login" open-type="switchTab">
+				<image src='/resource/images/temp/banner2.jpg'></image>
+			</navigator>
+		</swiper-item>
+		<swiper-item>
+			<navigator url="/pages/login/login" open-type="switchTab">
+				<image src='/resource/images/temp/banner3.jpg'></image>
+			</navigator>
+		</swiper-item>
+		<swiper-item>
+			<navigator url="/pages/login/login" open-type="switchTab">
+				<image src='/resource/images/temp/banner4.jpg'></image>
+			</navigator>
+		</swiper-item>
+	</swiper>
+	<!-- 导航 -->
+	<view class="nav">
+		<view class="menu" wx:for="{{navList}}" wx:key="index">
+			<image src="/resource/{{item.src}}"></image>
+			<!-- <image src="/resource/images/nav01.png"></image> -->
+			<text>{{item.title}}</text>
+		</view>
+	</view>
+</view>
+
+<!-- 产品列表 -->
+<text class="hot">热卖产品</text>
+<view class="productList">
+	<navigator url="/pages/detial/detial?id={{item.id}}" class="product" wx:for="{{productList}}" wx:key="index" >
+		<!-- 拿到后台数据 到图片路径 -->
+		<image src="/resource/{{item.src}}" mode="widthFix"></image>
+		<!-- <image src="/resource/images/photo.png" mode="widthFix"></image> -->
+		<view class="info">
+			<text class="name">{{item.name}}</text>
+			<text class="price">¥ {{item.price}}</text>
+		</view>
+	</navigator>
+
+	<!-- <view class="product">
+		<image src="/resource/images/photo.png" mode="widthFix"></image>
+		<view class="info">
+			<text class="name">华为mate</text>
+			<text class="price">3099</text>
+		</view>
+	</view>
+  <view class="product">
+		<image src="/resource/images/photo.png" mode="widthFix"></image>
+		<view class="info">
+			<text class="name">华为mate</text>
+			<text class="price">3099</text>
+		</view>
+	</view>
+  <view class="product">
+		<image src="/resource/images/photo.png" mode="widthFix"></image>
+		<view class="info">
+			<text class="name">华为mate</text>
+			<text class="price">3099</text>
+		</view>
+	</view> -->
+</view>

@@ -1,0 +1,78 @@
+/* pages/login/login.wxss */
+.outView {
+  /* 沾满 */
+  height: 100vh;
+  /* 流式布局 */
+  display: flex;
+  /* 列 */
+  flex-direction: column;
+  /* 内边距 
+  在 iPhone6 上，屏幕宽度为375px，共有750个物理像素，
+  则750rpx = 375px = 750物理像素，1rpx = 0.5px = 1物理像素。  */
+  padding: 30rpx;
+
+  background-color: aquamarine;
+}
+
+text {
+  /* 文字大小 */
+  font-size: 40rpx;
+  /* 水平居中 */
+  display: flex;
+  justify-content: center;
+
+  background-color: beige;
+}
+
+input {
+  /* 边框 宽度 实线 颜色*/
+  border: 2px solid #336699;
+  /* 外边距 */
+  /* margin: 16rpx 0; */
+  /* 边框圆角 */
+  border-radius: 12rpx;
+
+  padding-left: 16rpx;
+  height: 90rpx;
+}
+
+.imput_number {
+  /* input
+  和imput_number
+  类选择器中  类选择器的  权重大
+  */
+  margin: 16rpx 0;
+}
+
+.rowView {
+  background-color: tomato;
+  display: flex;
+  flex-direction: row;
+  /* 占父宽度100% */
+  width: 100%;
+  margin-bottom: 16rpx;
+
+  /* 水平居中 */
+  justify-content: center;
+  /* 垂直居中 */
+  align-items: center;
+
+}
+
+.imput_ref {
+  flex: 2;
+  margin-right: 10rpx;
+}
+
+.btn_getRef {
+  /* 背景色 */
+  background-color: #576b95;
+  /* 前景色 */
+  color: white;
+  font-size: 30rpx;
+  flex: 1;
+
+ 
+  /* 内行高 */
+  line-height: 64rpx;
+}

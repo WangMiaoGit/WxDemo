@@ -1,0 +1,58 @@
+/* pages/classtype/classtype.wxss */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: start;
+  align-items: flex-start; */
+  background-color: blueviolet;
+}
+
+.menu {
+  background-color: #225599;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100vh;
+  /* 主族方向 */
+  justify-content: start;
+  /* 副族方向 */
+  align-items: center;
+}
+
+.menu .classtype {
+  margin: 16rpx 0;
+}
+
+.classtype text{
+  color: white;
+  font-weight: 500;
+}
+
+.list {
+  background-color: turquoise;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.list .productList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.productList .info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+image{
+  width: 300rpx;
+
+}

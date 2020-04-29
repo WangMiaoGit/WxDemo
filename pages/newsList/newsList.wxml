@@ -1,0 +1,53 @@
+<!--pages/newsList/newsList.wxml-->
+<view class="head">
+	<input placeholder="请输入内容" placeholder-style="padding-left:10px; font-size:12px"></input>
+</view>
+
+<view class="type_pad">
+	<text wx:for="{{topBars}}" wx:key="id" class="{{selectBar==item.id?'selected':''}}"
+  bindtap="clickType" data-id="{{item.id}}"
+  >{{item.name}}</text>
+</view>
+
+<view class="body">
+	<view class="news-pad" wx:for="{{newsList}}" wx:key="id">
+		<view class="user-pad">
+			<image src="{{item.headUrl}}"></image>
+			<text>{{item.userName}}</text>
+			<text class="{{item.isFocus?'':'no-focused'}}" wx:if="{{item.isFocus}}">已关注</text>
+			<text class="{{item.isFocus?'':'no-focused'}}" wx:else>关注</text>
+		</view>
+		<block wx:if="{{item.isVideo}}">
+			<view class="news-title">{{item.newsTitle}}</view>
+		</block>
+		<block wx:else>
+			<view class="news-title">{{item.newsAbstrcak}}</view>
+		</block>
+
+
+		<view class="news-content">
+			<block wx:if="{{item.isVideo}}">
+				<!--  objectFit="fill"  视频拉伸-->
+				<video objectFit="fill" src="{{item.videoUrl}}"></video>
+			</block>
+			<block wx:elif="{{item.imageUrls !=null}}"  >
+				<image mode="widthFix" src="{{item.imageUrls}}"></image>
+			</block>
+		</view>
+
+
+
+	</view>
+
+	<!-- <view class="news-pad">
+		<view class="user-pad">
+			<image src="/resource/images/photo.png"></image>
+			<text>Max</text>
+			<text class="{{no-focused}}">已关注</text>
+		</view>
+		<view class="news-title">只争朝夕 不负韶华</view>
+		<view class="news-content">
+			<image mode="widthFix" src="/resource/images/photo.png"></image>
+		</view>
+	</view> -->
+</view>

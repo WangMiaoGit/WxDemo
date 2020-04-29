@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<view class="outView">
+	<text>XXXX登陆</text>
+	<input type="number" placeholder="请输入手机号码" bindblur="getPhone" class="imput_number"></input>
+	<view class='rowView'>
+		<input type="number" placeholder="请输入验证码" bindblur="getCode" class="imput_ref"></input>
+		<button bindtap='getRef' class="btn_getRef">获取验证码</button>
+	</view>
+	<view>
+		<button bindtap="login"  class="btn_login" type="primary" style="width:100%">登陆</button>
+	</view>
+</view>

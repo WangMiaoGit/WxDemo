@@ -1,0 +1,69 @@
+/* pages/detial/detial.wxss */
+.title {
+  display: block;
+  text-align: center;
+  font-size: 40rpx;
+  /* 加粗 */
+  font-weight: 500;
+  margin: 10rpx 0;
+}
+
+scroll-view {
+  width: 100%;
+  height: 100vh;
+}
+
+swiper {
+  width: 96%;
+  height: 490rpx;
+  margin: 0 16rpx;
+}
+
+swiper video,
+image {
+  width: 100%;
+  border-radius: 16rpx;
+}
+
+.info {
+  width: 96%;
+  margin: 0 16rpx;
+  display: flex;
+  /* 两边对齐 */
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: rgb(250, 105, 226);
+}
+
+.info text {
+  font-size: 36rpx;
+  color: white;
+}
+
+.wrap image {
+  width: 100%;
+}
+
+
+.bottom {
+  /* 绝对定位 */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(105, 250, 177);
+}
+
+.bottom button {
+  color: white;
+  width: 50%;
+  background-color: rgb(250, 105, 226);
+}
+
+.bottom button:last-child{
+  padding-left: 10rpx;  
+}

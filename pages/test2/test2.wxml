@@ -1,0 +1,15 @@
+<!--pages/test2/test2.wxml-->
+<view>
+	{{msg}}
+</view>
+<!-- 可以直接渲染  html -->
+<rich-text nodes="{{msg}}"></rich-text>
+<button bindtap="changeMsg">修改数据</button>
+
+<button bindtap="toast">Toast</button>
+<!-- 标签式的 跳转 -->
+<navigator url="/pages/test/test?id=1"><text>跳转</text></navigator>
+<button bindtap="jumpTo">跳转</button>
+
+<button bindtap="getData">获取数据</button>
+<button bindtap="showText">模块化</button>

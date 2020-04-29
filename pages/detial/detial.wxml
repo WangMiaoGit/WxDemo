@@ -1,0 +1,38 @@
+<!--pages/detial/detial.wxml-->
+<scroll-view scroll-y>
+	<text class="title">商品详情</text>
+<!-- 头部详情 -->
+	<swiper autoplay circular indicator-dots indicator-color="#fff" indicator-active-color="#00ffff">
+		<swiper-item>
+			<video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" enable-danmu danmu-btn controls></video>
+		</swiper-item>
+		<swiper-item>
+			<image src='/resource/images/mate30pro01.jpeg'></image>
+		</swiper-item>
+		<swiper-item>
+			<image src='/resource/images/mate30pro02.jpeg'></image>
+		</swiper-item>
+		<swiper-item>
+			<image src='/resource/images/mate30pro03.jpg'></image>
+		</swiper-item>
+	</swiper>
+<!-- 产品信息 -->
+	<view class="info">
+		<text class="name">华为mate30pro</text>
+		<text class="price">¥ 5999元</text>
+	</view>
+
+<!-- 产品详细介绍 -->
+	<text class="title">产品详情介绍</text>
+	<view>
+		<image src="/resource/images/detail01.png" mode="widthFix"></image>
+		<image src="/resource/images/detail02.png" mode="widthFix"></image>
+		<image src="/resource/images/detail03.png" mode="widthFix"></image>
+	</view>
+</scroll-view>
+
+<!-- 底部按钮组 -->
+<view class="bottom">
+	<button bindtap="addcar">添加到购物车</button>
+	<button bindtap="buy">立即购买</button>
+</view>

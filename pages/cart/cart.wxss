@@ -1,0 +1,36 @@
+/* pages/cart/cart.wxss */
+scroll-view {
+  width: 100%;
+  height: 100vh;
+}
+
+.productList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* 两边对齐 */
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #5599ff;
+}
+.productList image{
+  width: 200rpx;
+}
+
+.info{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info .price{
+  color: red;
+  font-weight: 500;
+}
+
+.bottom{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
