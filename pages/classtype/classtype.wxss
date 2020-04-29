@@ -44,12 +44,30 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: 10rpx;
+  border:1px solid #000;
 }
 
-.productList .info{
+.list .productListLast {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border:1px solid #000;
+}
+
+ .info{
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+ .info text{
+  margin-left: 16rpx;
+}
+.info text:last-child{
+  margin-top: 10rpx;
 }
 
 image{

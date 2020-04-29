@@ -10,7 +10,7 @@
 	<!-- 右边列表 view-->
 	<scroll-view class="list" scroll-y>
 		<!-- 产品 -->
-		<view class="productList" wx:for="{{productList.length==0?productAll:productList}}" wx:key='index'>
+		<view class="{{index==0?'productListLast':'productList'}}" wx:for="{{productList.length==0?productAll:productList}}" wx:key='index' id="{{item.id}}">
 			<image src="/resource/{{item.src}}" mode="widthFix"></image>
 			<view class="info">
 				<text>{{item.name}}</text>
