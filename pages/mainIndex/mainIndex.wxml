@@ -30,7 +30,7 @@
 	</swiper>
 	<!-- 导航 -->
 	<view class="nav">
-		<view class="menu" wx:for="{{navList}}" wx:key="index">
+		<view class="menu" wx:for="{{navList}}" wx:key="index" bindtap="go">
 			<image src="/resource/{{item.src}}"></image>
 			<!-- <image src="/resource/images/nav01.png"></image> -->
 			<text>{{item.title}}</text>

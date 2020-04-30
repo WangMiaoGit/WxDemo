@@ -22,12 +22,28 @@
 }
 
 .menu .classtype {
-  margin: 16rpx 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* 主族方向 */
+  justify-content: start;
+  /* 副族方向 */
+  align-items: center;
+
 }
 
-.classtype text{
-  color: white;
+.classtype text {
+
   font-weight: 500;
+  margin-top: 16rpx;
+}
+
+.selected {
+  color: red;
+}
+
+.unselected {
+  color: white;
 }
 
 .list {
@@ -45,7 +61,7 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 10rpx;
-  border:1px solid #000;
+  border: 1px solid #000;
 }
 
 .list .productListLast {
@@ -54,23 +70,24 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border:1px solid #000;
+  border: 1px solid #000;
 }
 
- .info{
+.info {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
- .info text{
+.info text {
   margin-left: 16rpx;
 }
-.info text:last-child{
+
+.info text:last-child {
   margin-top: 10rpx;
 }
 
-image{
+image {
   width: 300rpx;
 
 }

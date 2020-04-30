@@ -3,8 +3,9 @@
 	<!-- 左边菜单 view-->
 	<view class="menu">
 		<!-- 分类 -->
-		<view id="{{item.id}}" class="classtype" wx:for="{{classType}}" wx:key='index' bindtap="getClassProductors">
-			<text >{{item.name}}</text>
+		<view  class="classtype" >
+			<text class="{{selectedMenu==item.id?'selected':'unselected'}}"
+			id="{{item.id}}"  wx:for="{{classType}}" wx:key='index' bindtap="getClassProductors" >{{item.name}}</text>
 		</view>
 	</view>
 	<!-- 右边列表 view-->

@@ -6,11 +6,11 @@ Page({
    */
   data: {
     classType: [
-      { "id": 1, "name": "手机" },
-      { "id": 2, "name": "数码" },
-      { "id": 3, "name": "服装" },
-      { "id": 4, "name": "日用" },
-      { "id": 5, "name": "药品" }],
+      { id: 1, name: "手机" },
+      { id: 2, name: "数码" },
+      { id: 3, name: "服装" },
+      { id: 4, name: "日用" },
+      { id: 5, name: "药品" }],
     productList: [],
     // 模拟后台数据
     productAll: [
@@ -25,20 +25,23 @@ Page({
       { id: 9, name: "衣架", src: "/images/temp/cate9.jpg", price: 38, classid: 4 },
       { id: 10, name: "阿莫西林", src: "/images/temp/cate10.jpg", price: 38, classid: 5 },
       { id: 11, name: "健胃消食片", src: "/images/temp/cate11.jpg", price: 38, classid: 5 },
-    ]
+    ],
+    selectedMenu:0
   },
 
   getClassProductors(e){
     var p =this.data.productAll;
     var id = e.currentTarget.id;
     let list=[];
+    console.log(e);
     for(var i=0;i<p.length;i++){
       if (p[i].classid==id) {
         list.push(p[i]);
       }
     };
     this.setData({
-      productList:list
+      productList:list,
+      selectedMenu:e.currentTarget.id
     })
   },
   

@@ -57,3 +57,5 @@ data-传参的名称
 -->
 <button bindtap="showparam" data-number="1" data-number2="2">传参</button>
 
+<my-hellow></my-hellow>
+
