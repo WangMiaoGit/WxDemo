@@ -1,0 +1,2 @@
+<!--common/hellow/world.wxml-->
+<view>{{title}}</view>

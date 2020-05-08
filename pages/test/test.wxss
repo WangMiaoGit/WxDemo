@@ -2,3 +2,25 @@
 .textstyle{
   background-color: aqua;
 }
+
+.area{
+  width: 750rpx;
+  position: relative;
+  height: 150rpx;
+}
+.item{
+  width: 900rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+}
+.left{
+  width:750rpx;
+  background-color: grey;
+  
+}
+
+.right{
+  width: 150rpx;
+  background-color: rgb(119, 20, 28);
+}

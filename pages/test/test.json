@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "my-hellow":"../../common/hellow/hellow"
+    "my-hellow":"../../common/hellow/hellow",
+    "my-world":"../../common/hellow/world",
+    "c-list":"../../common/cources/list"
   }
 }

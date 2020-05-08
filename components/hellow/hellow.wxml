@@ -1,0 +1,14 @@
+<slot name="header"></slot>
+<view class="component">
+	<text class="text">
+    {{title}}
+  </text>
+</view>
+<view >
+<text>{{num}}</text>
+<button bindtap="add">+</button>
+</view>
+<!-- 默认插槽 -->
+<slot ></slot>
+<!-- 命名插槽 -->
+<slot name="footer"></slot>

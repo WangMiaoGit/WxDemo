@@ -2,6 +2,8 @@
 <view>
 
 </view>
+
+<!-- 横向滚动的时候   scroll-y   style="white-space:nowrap"  子view中 display:inline-block -->
 <scroll-view scroll-y>
 	<view class="productList" wx:for="{{productList}}" wx:key="index">
 		<image src="/resource/{{item.src}}" mode="widthFix"></image>

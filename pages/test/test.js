@@ -5,6 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
+    imgs:[{
+     url: "/resource/images/temp/banner1.jpg"
+    },
+    {
+      url: "/resource/images/temp/banner2.jpg"
+     },
+     {
+      url: "/resource/images/temp/banner3.jpg"
+     }],
+     html:'<img style="max-width:100%;height:auto;display:block" src="https://www.baidu.com/img/bd_logo1.png"/>',
+    //  rich-text  添加内部  html  节点
+     nodes:[{
+       name:'div',
+       attrs:{
+         class:'div_class',
+         style:'max-height:100%;height:auto;color:red;'
+       },
+       children:[{
+         type:'text',
+         text:'Hello&nbsp;World!'
+       }]
+     }]
 
   },
 
@@ -74,7 +96,9 @@ Page({
     console.log(param.currentTarget.dataset.number2);
   },
 
-
+  bindPickview(e){
+    console.log(e.detail)
+  },
 
   /**
    * 生命周期函数--监听页面加载

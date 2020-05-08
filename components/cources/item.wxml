@@ -1,0 +1,6 @@
+<!--common/cources/item.wxml-->
+<!-- 父传子 父类data 子类properties -->
+<view class="item">{{title}}
+<!-- 子传父 事件驱动 -->
+	<text class="del" bindtap="delItem" > X</text>
+</view>

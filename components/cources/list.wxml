@@ -1,0 +1,5 @@
+<!--common/cources/list.wxml-->
+<view>
+<!-- 父类监听 binddel="delCource" -->
+	<c-item binddel="delCource" idx="{{index}}" title="{{item}}" wx:for="{{listdata}}" wx:key="idnex" />
+</view>

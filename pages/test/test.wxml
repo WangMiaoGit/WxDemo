@@ -14,11 +14,12 @@
 	</block>
 </view>
 <!-- 一组标签 -->
+<!-- 多选 -->
 <checkbox-group>
 	<checkbox>man</checkbox>
 	<checkbox>woman</checkbox>
 </checkbox-group>
-
+<!-- 单选 -->
 <radio-group>
 	<radio>男</radio>
 	<radio>女</radio>
@@ -57,5 +58,102 @@ data-传参的名称
 -->
 <button bindtap="showparam" data-number="1" data-number2="2">传参</button>
 
-<my-hellow></my-hellow>
+<my-hellow>
+	<my-world></my-world>
+	<my-world></my-world>
+	<view slot="header">插槽1</view>
+	<view>插槽2</view>
+	<view slot="footer">插槽3</view>
 
+</my-hellow>
+
+<c-list></c-list>
+
+
+<swiper style="width:100%" autoplay indicator-dots>
+	<swiper-item wx:for="{{imgs}}" wx:key="index" style="width:100%">
+		<image style="width:100%" src="{{item.url}}" mode="widthFix"></image>
+	</swiper-item>
+</swiper>
+
+
+<!-- 购物车 左滑 -->
+<text>购物车 左滑效果</text>
+<movable-area class="area">
+	<movable-view class="item" direction="horizontal">
+		<view class="left"></view>
+		<view class="right"></view>
+	</movable-view>
+</movable-area>
+
+<rich-text nodes="{{html}}"></rich-text>
+<rich-text nodes="{{nodes}}"></rich-text>
+
+<!-- 两个表单事件 -->
+<form bindsubmit="doSubmit" bindreset="doReset">
+	<!-- 提交按钮 -->
+	<button form-type="submit">提交</button>
+	<!-- 重置按钮 -->
+	<button form-type="reset">重置</button>
+	<button bindgetuserinfo="getUserInfo" open-type="getUserInfo">获取当前登陆的用户信息</button>
+</form>
+
+<!-- 开关 -->
+<switch checked type="checkbox" color="red">开关checkbox</switch>
+<switch type="switch" color="black">开关switch</switch>
+
+<!-- 多文本输入框 -->
+<view>
+	简介:
+	<!-- placeholder占位 -->
+	<textarea placeholder="placeholder颜色是红色的" placeholder-style="color:red;"></textarea>
+</view>
+
+
+<view>
+	选择：
+	<!-- 滚动选择器 value  选中的数组中哪一个-->
+	<picker value="1" range="{{[1,2,3]}}">
+		<view>
+			请选择
+		</view>
+	</picker>
+
+	<!-- 滚动选择器 value  选中的数组中哪一个-->
+	<picker mode="multiSelector" range="{{[[1,2],[2,3],[3,4]]}}" wx:key="index">
+		<view>
+			多列选择
+		</view>
+	</picker>
+
+	<picker mode='time'>时间选择器</picker>
+	<picker mode='date'>日期选择器</picker>
+	<picker mode='region'>省市选择器</picker>
+
+	<!-- 展开的选择器 -->
+	<picker-view bindchange="bindPickview" indicator-style="height:100rpx" style="width:100%;height:300rpx">
+		<picker-view-column>
+			<view wx:for="{{[1,2,3,4,5,6]}}" wx:key="index">
+				{{item}}
+			</view>
+		</picker-view-column>
+		<picker-view-column>
+			<view wx:for="{{[1,2,3,4,5,6]}}" wx:key="index">
+				{{item}}
+			</view>
+		</picker-view-column>
+		<picker-view-column>
+			<view wx:for="{{[1,2,3,4,5,6]}}" wx:key="index">
+				{{item}}
+			</view>
+		</picker-view-column>
+	</picker-view>
+</view>
+
+
+<view>
+<!-- 用户名称 -->
+<open-data type="userNickName"></open-data>
+<!-- 用户头像 -->
+<open-data type="userAvatarUrl"></open-data>
+</view>

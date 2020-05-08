@@ -1,0 +1,50 @@
+/* common/hellow/hellow.wxss */
+.component{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  
+}
+
+ /* 水平垂直居中 */
+ .component .text{
+  width: 100%;
+  
+  color: aqua;
+  background-color: black;
+  margin:16rpx;
+  
+ 
+  text-align: center;
+  line-height: 100%;
+  height: 100%;
+} 
+
+
+/* 水平居中 */
+/* .component .text{
+  width: 100%;
+  height: 100%;
+  color: aqua;
+  background-color: black;
+  margin:16rpx;
+  
+  
+  text-align: center;
+  
+} */
+
+/* 垂直居中 */
+/* .component .text{
+  width: 100%;
+  height: 100%;
+  color: aqua;
+  background-color: black;
+  margin:16rpx;
+  
+  line-height: 100%;
+} */
