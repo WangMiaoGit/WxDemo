@@ -24,3 +24,12 @@
   width: 150rpx;
   background-color: rgb(119, 20, 28);
 }
+
+.defaule-btn{
+  width: 200rpx !important;
+}
+
+.exit{
+  display: block;
+  
+}

@@ -34,6 +34,9 @@
 <button bindtap="showModel" type="default">Model</button>
 <button type="warn">button</button>
 
+
+<button class='defaule-btn'>自定义</button>
+
 <!-- bingsubmit  提交的方法   bindreset  重置的方法 -->
 <form bindsubmit="" bindreset="">
 	<button form-type="submit">button</button>
@@ -152,8 +155,18 @@ data-传参的名称
 
 
 <view>
-<!-- 用户名称 -->
-<open-data type="userNickName"></open-data>
-<!-- 用户头像 -->
-<open-data type="userAvatarUrl"></open-data>
+	<!-- 用户名称 -->
+	<open-data type="userNickName"></open-data>
+	<!-- 用户头像 -->
+	<open-data type="userAvatarUrl"></open-data>
 </view>
+
+
+<view>
+	<modal isShowModal="{{isShowModal}}" inputVal="{{inputVal}}" modalTitle="{{modalTitle}}" placeholder="{{placeholder}}" inputType="{{inputType}}" showDesc="{{showDesc}}" bindcustomBindInput="customBindInput" bindconfirm="confirm" bindcancle="cancle">
+	</modal>
+</view>
+
+<navigator class='exit' open-type="exit" target="miniProgram">
+	<button>关闭</button>
+</navigator>

@@ -26,7 +26,9 @@ Page({
          type:'text',
          text:'Hello&nbsp;World!'
        }]
-     }]
+     }],
+     //显示自定义的model框
+     isShowModal: false
 
   },
 
@@ -98,6 +100,13 @@ Page({
 
   bindPickview(e){
     console.log(e.detail)
+  },
+
+  confirm(){
+    console.log('确定')
+  },
+  cancle(){
+    console.log('取消')
   },
 
   /**
